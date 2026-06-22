@@ -21,6 +21,6 @@ public class FloorDisplay implements ElevatorObserver {
     public void show() {
         System.out.println("Floor Display: " + floorNumber);
 
-        elevatorStatuses.values().forEach(e -> System.out.printf("Elevator=%d Floor=%d Direction=%d\n", e.getElevatorId(), e.getCurrentFloor(), e.getDirection()));
+        elevatorStatuses.values().forEach(e -> System.out.printf("Elevator=%d Floor=%d Direction=%s%n", e.getElevatorId(), e.getCurrentFloor(), e.getDirection()));
     }
 }
